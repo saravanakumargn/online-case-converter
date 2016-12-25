@@ -1,7 +1,7 @@
 <div class="row">
 	<div class="col-md-6">
 		<div class="text-xs-right mb-1">
-			<button class="btn btn-secondary" (click)="resetAll()">Clear</button>
+			<button class="btn btn-success" (click)="resetAll()">Clear</button>
 		</div>
 		<textarea [(ngModel)]="caseText" class="form-control" rows="12" placeholder="Type or paste your content here to convert"></textarea>
 		<div class="text-muted">
@@ -33,7 +33,7 @@
 	</div>
 	<div class="col-md-6">
 		<div class="text-xs-right mb-1">
-			<button class="btn btn-primary" type="button" ngxClipboard [cbContent]="convertedText">Copy</button>
+			<button class="btn btn-success" type="button" ngxClipboard [cbContent]="convertedText">Copy</button>
 		</div>
 		<textarea class="form-control" rows="12" [value]="convertedText" readonly></textarea>
 		<div class="text-muted"><small>Total Characters: {{convertedTextLen}}</small></div> 		
@@ -41,13 +41,13 @@
 </div>
 
 <section>
-	<button class="btn btn-outline-primary mb-1" (click)="caseUpper()">UPPERCASE</button>
-	<button class="btn btn-outline-primary mb-1" (click)="caseLower()">lowercase</button>
-	<button class="btn btn-outline-primary mb-1" (click)="caseTitle()">Title Case</button>
-	<button class="btn btn-outline-primary mb-1" (click)="caseSnake()">snake_case</button>
-	<button class="btn btn-outline-primary mb-1" (click)="caseScreamingSnake()">SCREAMING_SNAKE_CASE</button>
-	<button class="btn btn-outline-primary mb-1" (click)="uCaseCamel()">UpperCamelCase</button>
-	<button class="btn btn-outline-primary mb-1" (click)="lCaseCamel()">LowerCamelCase</button>
-	<button class="btn btn-outline-primary mb-1" (click)="singleSpace()">single space</button>
-	<button class="btn btn-outline-primary mb-1" (click)="seoUrl()">SEO friendly url</button>
+	<button class="btn btn-primary mb-1 mr-1" (click)="caseUpper()">UPPERCASE</button>
+	<button class="btn btn-primary mb-1 mr-1" (click)="caseLower()">lowercase</button>
+	<button class="btn btn-primary mb-1 mr-1" (click)="caseTitle()">Title Case</button>
+	<button class="btn btn-primary mb-1 mr-1" (click)="caseSnake()">snake_case</button>
+	<button class="btn btn-primary mb-1 mr-1" (click)="caseScreamingSnake()">SCREAMING_SNAKE_CASE</button>
+	<button class="btn btn-primary mb-1 mr-1" (click)="uCaseCamel()">UpperCamelCase</button>
+	<button class="btn btn-primary mb-1 mr-1" (click)="lCaseCamel()">LowerCamelCase</button>
+	<button class="btn btn-primary mb-1 mr-1" (click)="singleSpace()">single space</button>
+	<button class="btn btn-primary mb-1 mr-1" (click)="seoUrl()">SEO friendly url</button>
 </section>
