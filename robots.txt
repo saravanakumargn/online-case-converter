@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://saravanakumargn.github.io/online-case-converter/sitemap.xml
